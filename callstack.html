@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+<title> call stacks </title>
+</head>
+
+<body>
+
+<p id="demo"
+style="font-size: x-large;"> </p>
+
+<p id="demo2" 
+style="font-size: x-large;"> </p>
+<script>
+
+
+function addition(a,b){
+
+   return a + b;
+
+}
+
+
+function average(a,b){
+
+
+ 
+   return addition(a,b)/2;
+
+
+}
+
+
+function additions(a,b,c){
+
+
+    return a + b + c;
+
+
+}
+
+function averagee(a,b,c){
+
+
+    return additions(a,b,c)/2;
+
+}
+
+let result = average(10,20);
+
+let results = averagee(15,25,35);
+
+document.getElementById("demo").innerHTML = result;
+document.getElementById("demo2").innerHTML = results;
+
+
+
+</script>
+
+</body>
+
+</html>
